@@ -16,11 +16,12 @@ h1 {
   font-size: 3em;
 }
 
-
-h1, h2, h3 {
-    font-family: 'Asul', cursive;
-    text-align: center;
-    margin-top: 1.25em;
+h1,
+h2,
+h3 {
+  font-family: 'Asul', cursive;
+  text-align: center;
+  margin-top: 1.25em;
 }
 
 figure {
@@ -78,7 +79,7 @@ figcaption {
 }
 
 footer {
-  margin: 2em 0;
+  margin-top: 2em;
   background-color: #aaa;
   padding: 1.5em 0;
   text-align: center;
@@ -108,3 +109,39 @@ footer section {
 
 .contact-circle h3 {
   margin: 1em;
+}
+
+#unpredictable-content {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  #contact {
+    display: flex;
+    flex-flow: column;
+  }
+  .contact-circle {
+    height: auto;
+    padding: auto;
+    margin: auto;
+  }
+  .contact-circle h3 {
+    margin: auto;
+    font-size: 0.75em;
+  }
+  aside {
+    float: none;
+    width: 80%;
+    margin: auto;
+    font-style: italic;
+    font-size: 0.75em;
+  }
+  #unpredictable-content {
+    flex-flow: column;
+  }
+  #bikePic {
+    max-width: 80%;
+    float: none;
+    margin: auto;
+  }
+}
